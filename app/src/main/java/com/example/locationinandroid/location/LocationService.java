@@ -52,9 +52,9 @@ public class LocationService extends Service {
         Intent resultIntent = new Intent();
         PendingIntent pendingIntent = PendingIntent.getActivity(
                 getApplicationContext(),
-                0,
+                11,
                 resultIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT
+                PendingIntent.FLAG_IMMUTABLE
         );
         NotificationCompat.Builder builder = new NotificationCompat.Builder(
                 getApplicationContext(),
